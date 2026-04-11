@@ -1,0 +1,44 @@
+@layer tokens {
+  :root {
+    --color-grey-900: #151515;
+    --color-grey-700: #444444;
+    --color-gold-500: #D5966C;
+    --color-white: #FFFFFF;
+
+    --space-0: 0;
+    --space-025: 0.125rem;
+    --space-050: 0.25rem;
+    --space-075: 0.375rem;
+    --space-100: 0.5rem;
+    --space-125: 0.625rem;
+    --space-150: 0.75rem;
+    --space-200: 1rem;
+    --space-250: 1.25rem;
+    --space-300: 1.5rem;
+    --space-400: 2rem;
+    --space-500: 2.5rem;
+    --space-600: 3rem;
+    --space-800: 4rem;
+    --space-1000: 5rem;
+
+    --fs-100: 14px;
+    --fs-200: 16px;
+    --fs-300: 18px;
+    --fs-400: 20px;
+    --fs-500: 22px;
+    --fs-600: 32px;
+    --fs-700: 36px;
+    --fs-800: 50px;
+    --fs-900: 55px;
+    --fs-1000: 60px;
+    --fs-1100: 70px;
+    --fs-1200: 96px;
+
+    --fw-black: 900;
+    --fw-extra-bold: 800;
+    --fw-light: 300;
+
+    --ff-heading: 'Big Shoulders', system-ui, sans-serif;
+    --ff-body: 'Outfit', system-ui, sans-serif;
+  }
+}
