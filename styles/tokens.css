@@ -49,5 +49,7 @@
 
     --ff-heading: 'Big Shoulders', system-ui, sans-serif;
     --ff-body: 'Outfit', system-ui, sans-serif;
+
+    --transition-fast: .25s ease-out;
   }
 }

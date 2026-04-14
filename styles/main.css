@@ -90,6 +90,7 @@
   .button {
     display: inline-flex;
     background-color: var(--color-surface-primary);
+    transition: background-color var(--transition-fast);
 
     >* {
       padding-block: 1.1em;
@@ -111,6 +112,7 @@
     display: grid;
     place-items: center;
     background-color: var(--color-accent);
+    transition: background-color var(--transition-fast);
   }
 
   /* ILLUSTRATION */
@@ -142,6 +144,7 @@
   .social__link {
     display: grid;
     place-items: center;
+    transition: color var(--transition-fast);
   }
 
   .social__icon {
@@ -195,7 +198,8 @@
 
   .attribution__link {
     position: relative;
-    margin-inline: .3em;
+    margin-inline: .5em;
+    transition: color var(--transition-fast);
 
     &::after {
       content: '';
@@ -205,6 +209,7 @@
       inline-size: 100%;
       block-size: 0.125rem;
       background-color: currentColor;
+      transition: inline-size var(--transition-fast);
     }
   }
 }
@@ -403,4 +408,30 @@
   }
 }
 
-@layer states {}
+@layer states {
+
+  :focus-visible {
+    outline-color: var(--color-accent);
+  }
+
+  @media (hover:hover) {
+
+    .button:hover {
+      background-color: var(--color-accent);
+    }
+
+    .button:hover .button__icon {
+      background-color: var(--color-surface-primary);
+    }
+
+    .social__link:hover,
+    .attribution__link:hover {
+      color: var(--color-accent);
+    }
+  }
+
+
+  .attribution__link:is(:hover, :focus-visible)::after {
+    inline-size: 0;
+  }
+}
