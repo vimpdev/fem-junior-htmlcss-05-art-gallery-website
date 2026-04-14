@@ -16,7 +16,7 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 ## 🔗 Links
 
 - 🌎 [Live site](https://vimpdev.github.io/fem-junior-htmlcss-05-art-gallery-website/)
-<!-- - 📌 [Frontend Mentor solution]() -->
+- 📌 [Frontend Mentor solution](https://www.frontendmentor.io/solutions/art-gallery-website-mobile-first-css-layer-responsive-layout-dtJDxENEtE)
 
 ---
 
