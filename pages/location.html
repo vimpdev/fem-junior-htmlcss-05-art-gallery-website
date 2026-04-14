@@ -1,32 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Art gallery website</title>
+  <title>Art gallery website | VIMP</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./../favicon.png">
+  <link rel="stylesheet" href="./../styles/main.css">
 </head>
-<body>
 
-  Back to Home
+<body data-page="location">
 
-  Our location
+  <main>
+    <main>
+      <h1 class="visually-hidden">Modern Art Gallery location</h1>
 
-  99 King Street
-  Newport
-  RI 02840
-  United States of America
+      <section class="map" aria-label="Map showing gallery location">
+        <picture class="map__illustration">
+          <source media="(min-width: 64rem)"
+            srcset="./../assets/images/illustrations/map-desktop.png 1x, ./../assets/images/illustrations/map@2x-desktop.png 2x">
+          <source media="(min-width: 48rem)"
+            srcset="./../assets/images/illustrations/map-tablet.png 1x, ./../assets/images/illustrations/map@2x-tablet.png 2x">
+          <img src="./../assets/images/illustrations/map-mobile.png"
+            srcset="./../assets/images/illustrations/map@2x-mobile.png 2x"
+            alt="Map showing the location of Modern Art Gallery at 99 King Street, Newport">
+        </picture>
 
-  Our newly opened gallery is located near the Edward King House on 99 King 
-  Street, the Modern Art Gallery is free to all visitors and open seven days 
-  a week from 8am to 9pm.
+        <a href="./../index.html" class="button">
+          <span class="button__icon" aria-hidden="true">
+            <img src="./../assets/images/icons/icon-arrow-left.svg" alt="">
+          </span>
+          <span class="button__text">Back to home</span>
+        </a>
+      </section>
 
-  Modern Art Gallery
+      <section class="location">
+        <div class="location__inner container">
+          <h2 class="location__title">Our location</h1>
 
-  The Modern Art Gallery is free to all visitors and open seven days a week 
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+            <div class="location__content stack">
+              <p class="location__street">99 King Street</p>
+              <address class="location__address-details">
+                <p>Newport</p>
+                <p>RI 02840</p>
+                <p>United States of America</p>
+              </address>
+              <p class="location__description">
+                Our newly opened gallery is located near the Edward King House on 99 King
+                Street, the Modern Art Gallery is free to all visitors and open seven days
+                a week from 8am to 9pm.
+              </p>
+            </div>
+        </div>
+      </section>
+    </main>
 
+    <footer class="footer">
+      <div class="footer__inner container stack">
+
+        <div class="footer__content">
+          <img src="./../assets/images/logos/logo-dark.svg" alt="Modern Art Gallery" class="footer__logo">
+          <p class="footer__description">
+            The Modern Art Gallery is free to all visitors and open seven days a week
+            from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+          </p>
+          <ul class="social cluster" aria-label="Social media">
+            <li class="social__item">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                class="social__link">
+                <svg class="social__icon" aria-hidden="true">
+                  <use href="./../assets/images/icons/social-sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                class="social__link">
+                <svg class="social__icon" aria-hidden="true">
+                  <use href="./../assets/images/icons/social-sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X" class="social__link">
+                <svg class="social__icon" aria-hidden="true">
+                  <use href="./../assets/images/icons/social-sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <small class="attribution">Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank"
+            rel="noopener noreferrer" class="attribution__link">Frontend Mentor</a> – Coded by <a
+            href="https://www.frontendmentor.io/profile/vimpdev" target="_blank" rel="noopener noreferrer"
+            class="attribution__link">VIMP</a></small>
+      </div>
+    </footer>
 </body>
+
 </html>
